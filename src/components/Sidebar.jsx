@@ -147,18 +147,6 @@ const Sidebar = () => {
         </div>
         <p className="review">4,6 von 5 BASIEREND AUF 245 BEWERTUNGEN</p>
       </div>
-      {/* <div className="ratings-div">
-        <div className="rating-uppper">
-          <img src={google} alt="" className=" ratting-logo" />
-          <p className=" ratting-detail">Bewertungen</p>
-          <div className="start-div">
-            <div className="stars">
-              <img src="../assets/icons/star.png" alt="" className="star" />
-            </div>
-          </div>
-        </div>
-        <p className="rating-detail">4,6 von 5 BASIEREND AUF 245 BEWERTUNGEN</p>
-      </div> */}
     </div>
   );
 };
