@@ -1,0 +1,240 @@
+/* Sidebar Container */
+.sidebar {
+  width: 310px;
+  padding: 5px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Logo Section */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 80%;
+}
+
+.night-mode-btn {
+  padding: 5px;
+  background-color: #effbff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #003f52;
+  font-size: 10px;
+  font-weight: 700;
+  margin-left: auto;
+}
+
+/* Navigation List */
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navigation-div {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+  color: #004566;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 10px; /* Spacing between navigation items */
+}
+
+.navigation-div.selected {
+  color: white;
+  background-color: #024154; /* Highlight color when selected */
+}
+
+.nav-item {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-item .icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.icons {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  filter: brightness(0) saturate(100%) invert(29%) sepia(8%) saturate(450%)
+    hue-rotate(196deg) brightness(92%) contrast(86%);
+  transition: filter 0.3s; /* Smooth transition for color change */
+}
+
+.selectedIcon {
+  filter: brightness(0) saturate(100%) invert(100%); /* White color */
+  margin-right: 5px;
+}
+
+.icon-heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 16px;
+}
+
+.badge {
+  padding: 3px 10px;
+  background-color: #effbff;
+  border-radius: 5px;
+  color: #003f52;
+  font-size: 0.8rem;
+  font-weight: 700;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Updated description styles */
+/* .nav-list p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+} */
+
+/* Change color of description when selected */
+.selected-description {
+  color: white;
+  font-size: 12px;
+}
+.notSelected-description {
+  /* color: #003f52; */
+  color: #013d4e; /* Default color */
+  font-size: 12px;
+  /* Description color when the item is selected */
+}
+
+/* Bottom Section */
+.bottom-section {
+  margin-top: 50px;
+  width: 100%;
+  height: 200px;
+  background-color: #007377;
+  border: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.profile-card {
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+
+.profile-image {
+  position: absolute;
+  top: -50px;
+  left: 50px;
+}
+
+.bottom-detail {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+}
+.contact-btn {
+  background-color: #5faca6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.star-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rating-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.rating-logo {
+  width: 30px;
+}
+.star {
+  width: 25px; /* Adjust size as needed */
+  height: 25px; /* Adjust size as needed */
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin: 0 2px; /* Spacing between stars */
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rating-upper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.star-image {
+  width: 20px;
+}
+.rating-detail {
+  color: #007377;
+}
+.filled {
+  background-color: #fea500; /* Change to your desired color on hover */
+}
+
+.unfilled {
+  background-color: #d9d9d9; /* Background for unfilled stars */
+}
+.review {
+  color: #024154;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar {
+    position: relative;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .selectedIcon {
+    display: none;
+  }
+}

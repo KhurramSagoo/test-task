@@ -1,0 +1,38 @@
+.app-div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 10px;
+  width: 100%;
+  padding: 5px;
+}
+
+/* Toggle button styling */
+.toggle-button {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px;
+}
+
+/* Small screen adjustments */
+@media (max-width: 620px) {
+  .toggle-button {
+    display: block;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  /* Slide-out animation */
+  /* .app-div .sidebar {
+    transform: translateX($ {({showSidebar}) => (showSidebar ? "0": "-100%")});
+  } */
+
+  .right {
+    width: 100%;
+  }
+}
