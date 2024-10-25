@@ -9,6 +9,7 @@ import icon6 from "../assets/icons/golf.svg";
 import image from "../assets/image.png";
 import google from "../assets/google.png";
 import star from "../assets/icons/star.png";
+import arrow from "../assets/icons/downArrow.svg";
 import "./sidebar.css";
 
 const Sidebar = () => {
@@ -95,7 +96,10 @@ const Sidebar = () => {
                 />
                 {item.title}
               </div>
-              <span className="badge">{item.badge}</span>
+              <span className="badge">
+                {item.badge}
+                <img src={arrow} className="arrow" />
+              </span>
             </div>
             <p
               className={`${

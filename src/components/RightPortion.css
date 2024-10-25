@@ -11,10 +11,10 @@
 .upper {
   width: 100%;
   background-color: #459e97;
-  padding: 30px;
+  padding: 30px 60px;
   display: flex;
-  align-items: start;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
   gap: 5px;
   color: #e8e8e8;
   border-top-left-radius: 10px;
@@ -27,7 +27,20 @@
   flex-direction: column;
   cursor: pointer;
 }
+.upper-left {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
 
 .middle-part {
   width: 100%;
+}
+
+.top {
+  /* margin: 5px 0; */
+}
+.bottom {
+  /* margin: 5px 0; */
 }

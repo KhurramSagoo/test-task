@@ -9,8 +9,8 @@ const RightPortion = () => {
       {/* top portion */}
       <div className=" upper">
         <div className=" upper-left">
-          <h2>Beginnen Sie Ihre Verkaufsreise 👋 </h2>
-          <h6>
+          <h2 className="top">Beginnen Sie Ihre Verkaufsreise 👋 </h2>
+          <h6 className="bottom">
             Entdecken Sie mühelos jede Facette Ihres Verkaufsmandatsvertrags.
           </h6>
         </div>

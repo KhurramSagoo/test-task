@@ -8,10 +8,9 @@ const MiddlePart = () => {
     <div className="middleDiv">
       {boxes.map((num) => (
         <div key={num} className={`box box${num}`}>
-          {num}
+          {/* {num} */}
         </div>
       ))}
-       
     </div>
   );
 };
