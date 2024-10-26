@@ -77,8 +77,8 @@
   flex-wrap: wrap;
   gap: 10px;
 }
-.box {
-  background-color: red;
+.old-box {
+  background-color: #ff0000;
   border-radius: 20px;
   height: 100%;
   width: 100%;
@@ -164,10 +164,44 @@
 }
 
 @media screen and (max-width: 480px) {
+  .middleDiv {
+    padding: 5px;
+    gap: 5px;
+    width: 100%;
+  }
+  .left {
+    flex-direction: column;
+    gap: 5px;
+    max-width: auto;
+  }
+  .top-left-complete {
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+  }
+  .top-left {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .top-right {
+    gap: 5px;
+    /* max-width: 650px; */
+    /* max-height: 600px; */
+  }
+  .top-right-upper {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
   .middleDiv,
   .last {
     padding: 0px;
-    gap: 10px;
+    gap: 5px;
     flex-direction: column;
   }
   * {
@@ -184,37 +218,127 @@
   .box8,
   .box9 {
     width: 100%;
+    height: 100%;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .middleDiv,
-  .last {
-    padding: 10px;
-    gap: 10px;
+  .middleDiv {
+    padding: 30px;
+    align-items: start;
+    justify-content: start;
     flex-direction: column;
   }
-  * {
-    padding: 5px;
+  .top-left-complete {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .top-left {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .top-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    /* max-width: 650px; */
+    /* max-height: 600px; */
+  }
+  .top-right-upper {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .top-right-down {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  .box5,
-  .box7 {
+  /*  */
+  .right {
+    /* width: 100%; */
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .last {
+    flex-direction: row;
     width: 100%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
-  .middleDiv,
-  .last {
-    padding: 10px;
+  .middleDiv {
+    padding: 30px;
+    flex-direction: column;
+  }
+  .top-left-complete {
+    display: flex;
+    align-items: start;
+    justify-content: start;
     gap: 10px;
     flex-direction: column;
   }
-  * {
-    padding: 5px;
+  .top-left {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    /* width: 100%; */
+    /* max-width: 650px; */
+    /* max-height: 600px; */
+  }
+  .top-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    /* max-width: 650px; */
+    /* max-height: 600px; */
+  }
+  .top-right-upper {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .top-right-down {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  .box5,
-  .box7 {
-    width: 100%;
+  /*  */
+  .right {
+    /* width: 100%; */
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .last {
+    flex-direction: row;
   }
 }

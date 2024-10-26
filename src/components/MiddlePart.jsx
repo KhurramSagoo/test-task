@@ -46,7 +46,7 @@ const MiddlePart = () => {
         </div>
 
         <div className="last">
-          <div className="box8 box">
+          <div className="box8 old-box">
             <p className="quote">
               "Success is not final, failure is not fatal: It is the courage to
               continue that counts." — Winston Churchill
@@ -60,7 +60,7 @@ const MiddlePart = () => {
 
       {/* right portion */}
       <div className="right">
-        <div className="box6 box">
+        <div className="box6 old-box">
           <p className="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
             nemo aliquam nisi fugiat eius facere.
