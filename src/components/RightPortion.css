@@ -38,9 +38,13 @@
   width: 100%;
 }
 
-.top {
-  /* margin: 5px 0; */
-}
-.bottom {
-  /* margin: 5px 0; */
+@media screen and (max-width: 480px) {
+  .upper {
+    width: 100%;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    flex-direction: column;
+  }
 }

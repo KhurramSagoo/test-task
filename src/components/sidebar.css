@@ -37,7 +37,6 @@
   margin-left: auto;
 }
 
-/* Navigation List */
 .nav-list {
   list-style-type: none;
   padding: 0;
@@ -50,12 +49,12 @@
   color: #004566;
   background-color: white;
   transition: background-color 0.3s, color 0.3s;
-  margin-bottom: 10px; /* Spacing between navigation items */
+  margin-bottom: 10px;
 }
 
 .navigation-div.selected {
   color: white;
-  background-color: #024154; /* Highlight color when selected */
+  background-color: #024154;
 }
 
 .nav-item {
@@ -79,11 +78,11 @@
   margin-right: 5px;
   filter: brightness(0) saturate(100%) invert(29%) sepia(8%) saturate(450%)
     hue-rotate(196deg) brightness(92%) contrast(86%);
-  transition: filter 0.3s; /* Smooth transition for color change */
+  transition: filter 0.3s;
 }
 
 .selectedIcon {
-  filter: brightness(0) saturate(100%) invert(100%); /* White color */
+  filter: brightness(0) saturate(100%) invert(100%);
   margin-right: 5px;
 }
 
@@ -111,11 +110,6 @@
 .arrow {
   margin-left: 5px;
 }
-/* Updated description styles */
-/* .nav-list p {
-  font-size: 0.9rem;
-  margin: 5px 0;
-} */
 
 /* Change color of description when selected */
 .selected-description {
@@ -126,12 +120,10 @@
 }
 .notSelected-description {
   /* color: #003f52; */
-  color: #013d4e; /* Default color */
+  color: #013d4e;
   font-size: 12px;
   height: 25px;
   padding: 5px;
-
-  /* Description color when the item is selected */
 }
 
 /* Bottom Section */
@@ -199,11 +191,11 @@
   width: 30px;
 }
 .star {
-  width: 25px; /* Adjust size as needed */
-  height: 25px; /* Adjust size as needed */
+  width: 25px;
+  height: 25px;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
-  margin: 0 2px; /* Spacing between stars */
+  margin: 0 2px;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -223,18 +215,18 @@
   color: #007377;
 }
 .filled {
-  background-color: #fea500; /* Change to your desired color on hover */
+  background-color: #fea500;
 }
 
 .unfilled {
-  background-color: #d9d9d9; /* Background for unfilled stars */
+  background-color: #d9d9d9;
 }
 .review {
   color: #024154;
   font-size: 12px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .sidebar {
     position: relative;
   }
