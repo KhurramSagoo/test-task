@@ -30,10 +30,10 @@
 .top-right {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 .top-right-upper {
   display: flex;
@@ -194,9 +194,6 @@
     justify-content: center;
     width: 100%;
   }
-  * {
-    /* padding: 2px; */
-  }
 
   .box1,
   .box2,
@@ -268,7 +265,8 @@
     width: 100%;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .middleDiv {
     padding: 30px;
     flex-direction: column;
@@ -288,8 +286,6 @@
     flex-direction: row;
     gap: 10px;
     width: 100%;
-    /* max-width: 650px; */
-    /* max-height: 600px; */
   }
   .top-right {
     display: flex;
@@ -298,8 +294,6 @@
     flex-wrap: wrap;
     flex-direction: column;
     gap: 10px;
-    /* max-width: 650px; */
-    /* max-height: 600px; */
   }
   .top-right-upper {
     display: flex;
@@ -315,8 +309,59 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+  .right {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .last {
+    flex-direction: row;
+  }
+}
 
-  /*  */
+@media screen and (min-width: 1025px) and (max-width: 1336px) {
+  .middleDiv {
+    padding: 30px;
+    flex-direction: column;
+  }
+  .top-left-complete {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+    flex-direction: row;
+  }
+  .top-left {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+  }
+  .top-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .top-right-upper {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .top-right-down {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   .right {
     align-items: center;
     justify-content: center;
