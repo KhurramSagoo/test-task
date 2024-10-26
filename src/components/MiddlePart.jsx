@@ -10,28 +10,41 @@ import video from "../assets/video.mp4";
 
 const MiddlePart = () => {
   return (
+    // main div
     <div className="middleDiv">
+      {/* left */}
       <div className="left">
-        <div className="top">
-          <div className="box1 box ">
-            <img src={image1} alt="" />
+        {/* top left */}
+
+        <div className="top-left-complete">
+          <div className="top-left">
+            <div className="box1 box ">
+              <img src={image1} alt="" />
+            </div>
+            <div className="box4 box">
+              <img src={image4} alt="" />
+            </div>
           </div>
-          <div className="box2 box">
-            <img src={image2} alt="" />
-          </div>
-          <div className="box3 box">
-            <img src={image3} alt="" />
-          </div>
-          <div className="box4 box">
-            <img src={image4} alt="" />
-          </div>
-          <div className="box5 box">
-            <video className="videoPlayer" controls>
-              <source src={video} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+          <div className="top-right">
+            <div className="top-right-upper">
+              <div className="box2 box">
+                <img src={image2} alt="" />
+              </div>
+              <div className="box3 box">
+                <img src={image3} alt="" />
+              </div>
+            </div>
+            <div className="top-right-down">
+              <div className="box5 box">
+                <video className="videoPlayer" controls>
+                  <source src={video} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
           </div>
         </div>
+
         <div className="last">
           <div className="box8 box">
             <p className="quote">
@@ -44,6 +57,8 @@ const MiddlePart = () => {
           </div>
         </div>
       </div>
+
+      {/* right portion */}
       <div className="right">
         <div className="box6 box">
           <p className="text">
