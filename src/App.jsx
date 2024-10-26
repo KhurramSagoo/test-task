@@ -4,7 +4,7 @@ import Sidebar from "./components/Sidebar";
 import RightPortion from "./components/RightPortion";
 const App = () => {
   return (
-    <div className="container app-div">
+    <div className="app-div">
       <Sidebar />
       <RightPortion />
     </div>
