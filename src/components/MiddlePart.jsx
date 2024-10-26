@@ -19,19 +19,19 @@ const MiddlePart = () => {
         <div className="top-left-complete">
           <div className="top-left">
             <div className="box1 box ">
-              <img src={image1} alt="" />
+              <img src={image1} alt="" className="img" />
             </div>
             <div className="box4 box">
-              <img src={image4} alt="" />
+              <img src={image4} alt="" className="img" />
             </div>
           </div>
           <div className="top-right">
             <div className="top-right-upper">
               <div className="box2 box">
-                <img src={image2} alt="" />
+                <img src={image2} alt="" className="img" />
               </div>
               <div className="box3 box">
-                <img src={image3} alt="" />
+                <img src={image3} alt="" className="img" />
               </div>
             </div>
             <div className="top-right-down">
@@ -53,7 +53,7 @@ const MiddlePart = () => {
             </p>
           </div>
           <div className="box9 box">
-            <img src={image9} alt="" />
+            <img src={image9} alt="" className="img" />
           </div>
         </div>
       </div>
@@ -67,7 +67,7 @@ const MiddlePart = () => {
           </p>
         </div>
         <div className="box7 box">
-          <img src={image7} alt="" />
+          <img src={image7} alt="" className="img" />
         </div>
       </div>
     </div>
