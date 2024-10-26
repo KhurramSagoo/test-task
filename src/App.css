@@ -18,26 +18,12 @@
 
 /* Small screen adjustments */
 @media screen and (max-width: 768px) {
-  .toggle-button {
-    display: block;
-  }
-
   .app-div {
     gap: 5px;
     width: 100%;
-    padding: 5px;
   }
 
   .sidebar {
     display: none;
-  }
-
-  /* Slide-out animation */
-  /* .app-div .sidebar {
-    transform: translateX($ {({showSidebar}) => (showSidebar ? "0": "-100%")});
-  } */
-
-  .right {
-    width: 100%;
   }
 }
