@@ -59,4 +59,18 @@
     gap: 3px;
     flex-direction: column;
   }
+  .upper-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .top {
+    text-align: center;
+  }
+
+  .bottom {
+    text-align: center;
+  }
 }

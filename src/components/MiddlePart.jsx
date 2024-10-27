@@ -40,6 +40,9 @@ const MiddlePart = () => {
                   <source src={video} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
+                <div className="overlay">
+                  <button className="overlayButton">Nesting</button>
+                </div>
               </div>
             </div>
           </div>
